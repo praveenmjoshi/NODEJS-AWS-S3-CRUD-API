@@ -18,6 +18,7 @@
   "homepage": "https://github.com/praveenmjoshi/NODEJS-AWS-S3-CRUD-API#readme",
   "dependencies": {
     "aws-sdk": "^2.1284.0",
-    "serverless-iam-roles-per-function": "^3.1.0"
+    "serverless": "^3.26.0",
+    "serverless-iam-roles-per-function": "^3.2.0"
   }
 }
