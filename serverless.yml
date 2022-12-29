@@ -26,11 +26,11 @@ functions:
       - http:
           path: file # api endpoint
           method: POST
-      iamRoleStatements:
-        - Effect: Allow
-          Action:
-            - "S3:Put*"
-          Resource: arn:aws:s3:::${self:custom.fileBucketName}/*
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - "S3:Put*"
+        Resource: arn:aws:s3:::${self:custom.fileBucketName}/*
   s3FileGet:
     handler: src/get.handler
     name: s3-file-get
@@ -39,11 +39,11 @@ functions:
       - http:
           path: file/{fileKey} # api endpoint
           method: GET
-      iamRoleStatements:
-        - Effect: Allow
-          Action:
-            - "S3:Get*"
-          Resource: arn:aws:s3:::${self:custom.fileBucketName}/*
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - "S3:Get*"
+        Resource: arn:aws:s3:::${self:custom.fileBucketName}/*
   s3FileDelete:
     handler: src/delete.handler
     name: s3-file-delete
@@ -52,11 +52,11 @@ functions:
       - http:
           path: file/{fileKey} # api endpoint
           method: DELETE
-      iamRoleStatements:
-        - Effect: Allow
-          Action:
-            - "S3:DeleteObject"
-          Resource: arn:aws:s3:::${self:custom.fileBucketName}/*
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - "S3:DeleteObject"
+        Resource: arn:aws:s3:::${self:custom.fileBucketName}/*
 
 resources:
   Resources:
