@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-aws-s3-crud-api",
+  "version": "1.0.0",
+  "description": "Node JS APIs to perform file read, write, update and delete operations into S3 buckets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveenmjoshi/NODEJS-AWS-S3-CRUD-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praveenmjoshi/NODEJS-AWS-S3-CRUD-API/issues"
+  },
+  "homepage": "https://github.com/praveenmjoshi/NODEJS-AWS-S3-CRUD-API#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1284.0",
+    "serverless": "^3.26.0",
+    "serverless-iam-roles-per-function": "^3.2.0"
+  }
+}
